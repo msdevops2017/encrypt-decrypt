@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh '''
+                sh """
                  #!/bin/bash
-                 echo "teest"
+                 echo "test"
                  echo "${env.GIT_BRANCH}"
                  echo "${env.GIT_COMMIT}"
-                 '''
+                 """
             }
         }
     }
